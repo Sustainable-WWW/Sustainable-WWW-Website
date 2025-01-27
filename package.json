@@ -4,8 +4,8 @@
   "description": "Sustainable WWWs website developed in 3 main languages.",
   "main": "app.js",
   "scripts": {
-      "start-server:dev": "NODE_ENV=development ts-node app.ts",
-      "start-server:production": "NODE_ENV=production ts-node Server/app.ts"
+      "start-server:dev": "ts-node app.ts",
+      "start-server:production": "ts-node Server/app.ts"
   },
   "repository": {
       "type": "git",

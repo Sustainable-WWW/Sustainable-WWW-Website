@@ -1,5 +1,6 @@
 @use "./Abstracts/_colors.scss" as c;
 @use "./Abstracts/fonts" as f;
+@use "./Abstracts//general" as g;
 
 * {
     box-sizing: border-box;
@@ -23,6 +24,7 @@ body {
     font-weight: f.$Paragraph_Font_Weight_Normal;
     font-style: f.$Paragraph_Font_Style_Normal;
     line-height: 1.75;
+    font-size: 16px;
     color: c.$Black_Lighter;
 
     &.SWWW_Light {
@@ -31,5 +33,135 @@ body {
 
     &.SWWW_Dark {
         background-color: c.$Black_Lighter;
+    }
+}
+
+header.SWWW_Header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: c.$White;
+    z-index: 2;
+
+    .SWWW_Header_Inner {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 115px 1fr 100px;
+        column-gap: 25px;
+        align-items: center;
+        padding: g.$Site_Inner_Padding calc(g.$Site_Inner_Padding * 2);
+        margin: 0;
+
+        .SWWW_SiteLogo_Wrapper {
+            svg {
+                display: block;
+                width: 100px;
+                height: auto;
+                padding: 0;
+                margin: 0;
+                transition: all ease-in-out g.$Site_General_Animation_Time;
+            }
+
+            &:hover, &:focus, &:active {
+                svg {
+                    transform: scale(1.03);
+                }
+            }
+        }
+
+        // WEBSITE NAVIGATION
+        .SWWW_Navigation {
+            margin-left: auto;
+
+            > ul {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                align-items: center;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                > li {
+                    a {
+                        display: block;
+                        font-family: f.$Paragraph_Font;
+                        font-weight: f.$Paragraph_Font_Weight_Normal;
+                        font-style: f.$Paragraph_Font_Style_Normal;
+                        color: c.$Black_Lighter;
+                        font-size: 1rem;
+                        letter-spacing: -.7px;
+                        text-decoration: none;
+                        padding: 5px 10px;
+                        margin: 0;
+
+                        &:hover {
+                            cursor: pointer;
+                            text-decoration: underline;
+                        }
+                    }
+
+                    &:last-child {
+                        > a {
+                            padding-right: 0;
+                        }
+                    }
+
+                    ul.SWWW_Navigation_Submenu {
+                        display: none;
+                        position: absolute;
+                        top: 45px;
+                        list-style: none;
+                        padding: 10px;
+                        margin: 0;
+                        background-color: c.$White;
+                        z-index: 3;
+
+                    }
+
+                    .SWWW_Navigation_ServiceMenuToggler {
+                        &:hover, &:focus, &:active {
+                            ul.SWWW_Navigation_Submenu {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // LANGUAGE SWITCHER
+        .SWWW_LanguageSwitcher {
+            ul {
+                display: grid;
+                grid-template-columns: repeat(3, 30px);
+                column-gap: 5px;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        svg {
+                            width: 25px;
+                            height: auto;
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+        // TODO: FIX MOBILE MENU
+        .SWWW_MobileMenuToggler, .SWWW_Mobile_Menu {
+            display: none;
+        }
     }
 }
