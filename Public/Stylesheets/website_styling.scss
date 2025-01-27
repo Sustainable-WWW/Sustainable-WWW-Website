@@ -1,6 +1,7 @@
 @use "./Abstracts/_colors.scss" as c;
 @use "./Abstracts/fonts" as f;
 @use "./Abstracts//general" as g;
+@use "./Abstracts/breakpoints" as b;
 
 * {
     box-sizing: border-box;
@@ -159,9 +160,105 @@ header.SWWW_Header {
             }
         }
 
-        // TODO: FIX MOBILE MENU
-        .SWWW_MobileMenuToggler, .SWWW_Mobile_Menu {
+        // MOBILE MENU TOGGLER
+        .SWWW_MobileMenuToggler {
+            width: 42px;
+            height: 42px;
             display: none;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            border-radius: 0;
+            background-color: transparent;
+            padding: 0;
+            margin-left: auto;
+
+            svg {
+                width: 32px;
+                height: 32px;
+
+                path {
+                    fill: c.$Black_Lighter;
+                }
+            }
+        }
+
+        // MOBILE MENU
+        .SWWW_Mobile_Menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: c.$White;
+            z-index: 4;
+
+            button.SWWW_Mobile_Menu_Close {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 42px;
+                height: 42px;
+                background-color: transparent;
+                border: none;
+                border-radius: 0;
+                padding: 0;
+                margin: 0;
+
+                svg {
+                    width: 32px;
+                    height: 32px;
+    
+                    path {
+                        fill: c.$Black_Lighter;
+                    }
+                }
+            }
+
+            .SWWW_SiteLogo {
+                display: block;
+                width: 200px;
+                height: auto;
+                margin: 15% auto 6% auto;
+                padding: 0;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            &.SWWW_Mobile_Menu--Open {
+                display: block;
+
+                @media screen and (min-width: b.$Break_Point_Medium) {
+                    display: none;
+                }
+            }
+        }
+
+        // SWITCHING TO MOBILE LAYOUT
+        @media screen and (max-width: b.$Break_Point_Medium) {
+            grid-template-columns: 1fr 42px;
+
+            .SWWW_Navigation, .SWWW_LanguageSwitcher {
+                display: none;
+            }
+
+            .SWWW_MobileMenuToggler {
+                display: flex;
+            }
+        }
+
+        @media screen and (max-width: b.$Break_Point_Small) {
+            padding: g.$Site_Inner_Padding;
         }
     }
+}
+
+main, footer {
+    display: none;
 }
