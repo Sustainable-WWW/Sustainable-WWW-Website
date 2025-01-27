@@ -1,6 +1,35 @@
-@use "./Abstracts/_colors.scss";
-@use "./Abstracts/fonts";
+@use "./Abstracts/_colors.scss" as c;
+@use "./Abstracts/fonts" as f;
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-family: f.$Paragraph_Font;
+    font-weight: f.$Paragraph_Font_Weight_Normal;
+    font-style: f.$Paragraph_Font_Style_Normal;
+    line-height: 1.75;
+    color: c.$Black_Lighter;
+
+    &.SWWW_Light {
+        background-color: c.$White;
+    }
+
+    &.SWWW_Dark {
+        background-color: c.$Black_Lighter;
+    }
 }
