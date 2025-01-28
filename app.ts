@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(helmet.hidePoweredBy());
-app.use(helmet.noSniff());
+//app.use(helmet.noSniff());
 app.use(helmet.frameguard());
 app.use(helmet.xssFilter());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -17,6 +17,7 @@ app.use(bodyParser.json());
 
 // Set up the static file serving
 app.use('/Stylesheets', express.static(path.join(__dirname, 'Public', 'Stylesheets')));
+app.use('/Scripts', express.static(path.join(__dirname, 'Public', 'JavaScript')));
 app.use('/Fonts', express.static(path.join(__dirname, 'Public', 'Fonts')));
 // Shows static image files from the image upload folder
 app.use("/Images", express.static(path.join(__dirname, "Media")));

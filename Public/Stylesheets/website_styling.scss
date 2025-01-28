@@ -193,6 +193,7 @@ header.SWWW_Header {
             bottom: 0;
             left: 0;
             background-color: c.$White;
+            overflow-y: auto;
             z-index: 4;
 
             button.SWWW_Mobile_Menu_Close {
@@ -228,6 +229,113 @@ header.SWWW_Header {
                     display: block;
                     width: 100%;
                     height: auto;
+                }
+            }
+
+            nav.SWW_Mobile_Menu_Navigation {
+                width: 100%;
+                max-width: 350px;
+                padding: 0;
+                margin: 0 auto 40px auto;
+
+                > ul {
+                    display: block;
+                    list-style: none;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+
+                    > li {
+                        width: 100%;
+
+                        .SWWW_Mobile_Menu_Navigation--WithSubmenu {
+                            width: 100%;
+                            display: flex;
+                            flex-flow: row nowrap;
+                            justify-content: center;
+                            align-items: center;
+
+                            .SWWW_Mobile_Menu_Navigation_Submenu_Toggler {
+                                display: flex;
+                                flex-flow: row wrap;
+                                justify-content: center;
+                                align-items: center;
+                                width: 42px;
+                                height: 42px;
+                                background-color: transparent;
+                                border: none;
+                                border-radius: 0;
+
+                                svg {
+                                    width: 24px;
+                                    height: 24px;
+                                    transition: all ease-in-out g.$Site_General_Animation_Time;
+
+                                    path {
+                                        fill: c.$Black_Lighter;
+                                    }
+                                }
+                            }
+                        }
+
+                        a {
+                            display: block;
+                            font-family: f.$Paragraph_Font;
+                            font-weight: f.$Paragraph_Font_Weight_Normal;
+                            font-style: f.$Paragraph_Font_Style_Normal;
+                            color: c.$Black_Lighter;
+                            font-size: 4vw;
+                            letter-spacing: -.7px;
+                            text-decoration: none;
+                            text-align: center;
+                            padding: 5px 10px;
+                            margin: 0;
+
+                            &:hover {
+                                cursor: pointer;
+                                text-decoration: underline;
+                            }
+                        }
+
+                        .SWWW_Navigation_Submenu {
+                            width: 100%;
+                            height: auto;
+                            max-height: 0;
+                            list-style: none;
+                            padding: 0 0 0 8%;
+                            margin: 0;
+                            overflow-y: hidden;
+                            transition: all ease-in-out .3s;
+                        }
+
+                        &.SWWW_Navigation_Submenu--Open {
+                            .SWWW_Mobile_Menu_Navigation_Submenu_Toggler {
+                                svg {
+                                    transform: rotate(90deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .SWWW_LanguageSwitcher {
+                width: 100%;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+
+                > ul {
+                    grid-template-columns: repeat(3, 55px);
+
+                    li {
+                        a {
+                            svg {
+                                width: 37px;
+                            }
+                        }
+                    }
                 }
             }
 
