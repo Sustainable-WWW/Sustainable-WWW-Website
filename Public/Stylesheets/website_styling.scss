@@ -381,9 +381,40 @@ header.SWWW_Header {
     }
 }
 
-main {
-    display: none;
+// HERO
+.SWWW_Hero {
+
+    // LOGO ANIMATION
+    .cls-4 {
+        opacity: 0;
+    }
+
+    .cls-4-first {
+        animation: typewriter .1s forwards;
+        animation-delay: .5s;
+    }
+
+    .cls-4-second {
+        animation: typewriter .1s forwards;
+        animation-delay: 1s;
+    }
+
+    .cls-4-third {
+        animation: typewriter .5s forwards;
+        animation-delay: 1.5s;
+    }
 }
+
+// Create animation to animate in first .cls-4-first, then .cls-4-second, then .cls-4-third like it was a typewriter
+@keyframes typewriter {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 // FOOTER
 .SWWW_Footer {
