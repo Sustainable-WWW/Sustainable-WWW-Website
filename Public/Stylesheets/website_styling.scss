@@ -473,12 +473,18 @@ $Hero_ContentMaxWidth: 1280px;
         line-height: 96.2px;
         margin-top: 4%;
         margin-bottom: 2.3%;
+        opacity: 0;
+        animation: fade 1s forwards;
+        animation-delay: 1.3s;
     }
 
     > a {
         font-size: 23.68px;
         color: c.$Text_Black;
         text-decoration: none;
+        opacity: 0;
+        animation: fade 1s forwards;
+        animation-delay: 1.3s;
 
         &:hover, &:focus, &:active {
             cursor: pointer;
@@ -518,7 +524,7 @@ $Hero_ContentMaxWidth: 1280px;
         }
 
         > a {
-            font-size: 25px;
+            font-size: 21px;
         }
     }
 }
@@ -769,6 +775,15 @@ $Hero_ContentMaxWidth: 1280px;
 }
 
 @keyframes typewriter {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
     from {
         opacity: 0;
     }
