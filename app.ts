@@ -34,11 +34,6 @@ app.use("/en", en_routes);
 app.use("/se", se_routes);
 app.use("/dk", dk_routes);
 
-//app.get("/", (_req: Request, res: Response) => {
-//    res.render("DK/home");
-//});
-
-
 // TODO: SET UP 404 ROUTE
 
 app.listen(port, () => {
