@@ -1,5 +1,5 @@
 import helmet from "helmet";
-import express, { Request, Response } from "express";
+import express from "express";
 import path from "path";
 import bodyParser from "body-parser";
 
@@ -25,9 +25,18 @@ app.use("/Images", express.static(path.join(__dirname, "Media")));
 app.set("view engine", "ejs");
 app.set('views', path.join(__dirname, 'Views'));
 
-app.get("/", (_req: Request, res: Response) => {
-    res.render("DK/home");
-});
+// ROUTES
+import en_routes from "./en-routes";
+import se_routes from "./se-routes";
+import dk_routes from "./dk-routes";
+
+app.use("/en", en_routes);
+app.use("/se", se_routes);
+app.use("/dk", dk_routes);
+
+//app.get("/", (_req: Request, res: Response) => {
+//    res.render("DK/home");
+//});
 
 
 // TODO: SET UP 404 ROUTE
