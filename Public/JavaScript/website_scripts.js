@@ -46,4 +46,13 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+    // FAQ ANSWER OPEN/CLOSE
+    document.querySelectorAll(".SWWW_FAQ").forEach(function(faq) {
+        faq.addEventListener("click", function(event) {
+            if (event.target.tagName === "H4") {
+                faq.classList.toggle("SWWW_FAQ--Open");
+            }
+        });
+    });
 });
