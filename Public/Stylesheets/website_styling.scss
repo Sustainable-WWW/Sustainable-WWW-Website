@@ -686,13 +686,15 @@ $Hero_ContentMaxWidth: 1280px;
 
             h3 {
                 width: 100%;
-                font-size: 1rem;
+                font-size: 1.18rem;
                 font-weight: f.$Headline_Font_Weight;
+                line-height: 1.4;
                 margin: 0;
             }
 
             p {
                 width: 100%;
+                line-height: 1.4;
                 margin: 0;
             }
         }
@@ -749,6 +751,42 @@ $Hero_ContentMaxWidth: 1280px;
 
         .SWWW_FAQ--Answer {
             display: block;
+        }
+    }
+}
+
+// LINK LIST
+ul.SWWW_LinkList {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 g.$Site_General_Element_Margin_Bottom 0;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    > li {
+        width: 100%;
+
+        a {
+            display: block;
+            font-family: f.$Paragraph_Font;
+            font-weight: f.$Paragraph_Font_Weight_Normal;
+            font-style: f.$Paragraph_Font_Style_Normal;
+            color: c.$Black_Lighter;
+            font-size: 1.4rem;
+            letter-spacing: -.7px;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin: 0;
+            will-change: auto;
+            transition: all ease-in-out g.$Site_General_Animation_Time;
+
+            &:hover {
+                cursor: pointer;
+                color: c.$SWWW_Green;
+            }
         }
     }
 }
