@@ -417,16 +417,6 @@ main.SWWW_Main {
         }
     }
 
-    &.SWWW_Row--Hero {
-        > div {
-            padding: 40px calc(g.$Site_Inner_Padding * 2);
-
-            @media screen and (max-width: b.$Break_Point_Small) {
-                padding: 40px g.$Site_Inner_Padding;
-            }
-        }
-    }
-
     // BACKGROUND COLORING
     &.SWWW_Row--Gray {
         background-color: c.$Gray;
@@ -447,6 +437,12 @@ main.SWWW_Main {
                     padding: 40px g.$Site_Inner_Padding 60px g.$Site_Inner_Padding;
                 }
             }
+        }
+    }
+
+    &:first-child {
+        > div {
+            padding: 40px calc(g.$Site_Inner_Padding * 2) 100px calc(g.$Site_Inner_Padding * 2);
         }
     }
 }
@@ -493,7 +489,7 @@ h2, .SWWW_H2 {
 
 h3, .SWWW_H3 {
     font-size: 2.241rem;
-    line-height: 3.8rem;
+    line-height: 3rem;
 }
 
 h4, .SWWW_H4 {
@@ -695,6 +691,7 @@ $Hero_ContentMaxWidth: 1280px;
             p {
                 width: 100%;
                 line-height: 1.4;
+                font-size: 1.18rem;
                 margin: 0;
             }
         }

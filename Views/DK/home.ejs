@@ -1,59 +1,32 @@
 <!DOCTYPE html>
 <html lang="da-DK">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A concise description of your page (150-160 characters) that includes relevant keywords.">
-    <meta name="keywords" content="keyword1, keyword2, keyword3">
-    <meta name="author" content="Your Name or Your Company's Name">
-    <meta name="robots" content="index, follow">
-    <!-- OPEN GRAPH -->
-    <meta property="og:title" content="Your Page Title for Social Media">
-    <meta property="og:description" content="A short, catchy description for social media (about 200 characters).">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourwebsite.com/page-url">
-    <meta property="og:image" content="https://yourwebsite.com/image.jpg">
-    <meta property="og:site_name" content="Your Website Name">
-    <meta property="og:locale" content="da-DK">
-    <!-- TWITTER/X -->
-     <!-- Enable Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Your Page Title for Twitter">
-    <meta name="twitter:description" content="A description tailored for Twitter (less than 200 characters).">
-    <meta name="twitter:image" content="https://yourwebsite.com/image.jpg">
-    <!-- GENERAL -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">  
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="canonical" href="https://yourwebsite.com/page-url">
-    <meta name="theme-color" content="#FFFFFF">
-    <meta name="msapplication-TileColor" content="#FFFFFF">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="google-site-verification" content="your_verification_token">
-    <!-- Bing Site Verification -->
-    <meta name="msvalidate.01" content="your_verification_token">
-    <!-- Facebook Domain Verification -->
-    <meta name="facebook-domain-verification" content="your_verification_token">
-    <!--link rel="dns-prefetch" href="//yourcdn.com"-->
-    <!--link rel="preconnect" href="https://yourcdn.com"-->
-    <link rel="stylesheet" href="/Stylesheets/website_styling.min.css" />
-    <title>Document</title>
+    <%- include('../Partials/Header_Inclusions.ejs', {
+        page_title: "Bæredygtige hjemmesider og løsninger for en grønnere, hurtigere og bedre fremtid",
+        page_description: "Skræddersyede, bæredygtige hjemmesider for et grønnere web. Vi garanterer hurtigere, renere og mere effektive sites – inkluderende og tilgængelige, tilpasset dine behov.",
+        page_image: "https://sustainablewww.dk/image.jpg",
+        page_url: "https://sustainablewww.dk",
+        page_full_url: "https://sustainablewww.dk/",
+        page_keywords: "Bæredygtige hjemmesider",
+        page_author: "Sustainable WWW",
+        page_locale: "da-DK"
+    }) %>
 </head>
 <body class="SWWW_Light">
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
           "@type": "WebPage",
-          "name": "Your Page Title",
-          "description": "A brief description of the page.",
-          "url": "https://yourwebsite.com/page-url",
+          "name": "Bæredygtige, lette og ultra-hurtige hjemmesider for dig og planeten",
+          "description": "Skræddersyede, bæredygtige hjemmesider for et grønnere web. Vi garanterer hurtigere, renere og mere effektive sites – inkluderende og tilgængelige, tilpasset dine behov.",
+          "url": "https://sustainablewww.dk/",
           "image": "https://yourwebsite.com/image.jpg"
         }
     </script>
     <%- include('../Partials/DK/Header.ejs') %>
     <main class="SWWW_Main">
         <div class="SWWW_Main_Inner">
-            <section class="SWWW_Row SWWW_Row--Hero">
+            <section class="SWWW_Row">
                 <div>
                     <div class="SWWW_Hero">
                         <?xml version="1.0" encoding="UTF-8"?>
