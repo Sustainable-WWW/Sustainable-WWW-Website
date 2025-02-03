@@ -15,6 +15,14 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../Fonts/WOFF2/Poppins-Regular.woff2') format('woff2'),
+         url('../../Fonts/TTF/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 // Paragraphs
 @font-face {
     font-family: 'WorkSans';
@@ -50,6 +58,7 @@
 
 $Headline_Font: Poppins, sans-serif;
 $Headline_Font_Weight: bold;
+$Headline_Font_Weight_Normal: normal;
 $Headline_Font_Style_Normal: normal;
 $Headline_Font_Style_Italic: italic;
 
