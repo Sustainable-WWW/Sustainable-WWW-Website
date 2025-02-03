@@ -530,6 +530,10 @@ p, .SWWW_P {
         }
     }
 
+    &.P--MaxWidth900 {
+        max-width: 900px;
+    }
+
     &:first-child {
         margin-top: 0;
     }

@@ -13,4 +13,8 @@ router.get("/om-os", (_req: Request, res: Response) => {
     res.render("DK/om_os");
 });
 
+router.get("/kontakt", (_req: Request, res: Response) => {
+    res.render("DK/kontakt");
+});
+
 export default router;
