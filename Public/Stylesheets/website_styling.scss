@@ -48,6 +48,10 @@ header.SWWW_Header {
     width: 100%;
     background-color: c.$White;
     z-index: 2;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
     .SWWW_Header_Inner {
         width: 100%;
@@ -534,6 +538,10 @@ p, .SWWW_P {
         max-width: 900px;
     }
 
+    &.P--MarginBottom80 {
+        margin-bottom: 80px;
+    }
+
     &:first-child {
         margin-top: 0;
     }
@@ -564,6 +572,10 @@ img {
     background-color: c.$Black_Lighter;
     will-change: auto;
     transition: all ease-in-out g.$Site_General_Animation_Time;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
     &:hover {
         cursor: pointer;
@@ -695,20 +707,29 @@ $Hero_ContentMaxWidth: 1280px;
     > li {
         width: 100%;
 
-        a {
+        a, div {
             display: block;
             width: 100%;
             height: auto;
             text-decoration: none;
             color: c.$Text_Black;
 
-            img {
-                display: block;
-                width: 100%;
-                height: auto;
-                padding: 0;
-                margin: 0 0 15px 0;
+            picture {
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    padding: 0;
+                    margin: 0 0 15px 0;
+                    
+                }
             }
+            
 
             h3 {
                 width: 100%;
@@ -716,6 +737,10 @@ $Hero_ContentMaxWidth: 1280px;
                 font-weight: f.$Headline_Font_Weight;
                 line-height: 1.4;
                 margin: 0;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
             }
 
             p {
@@ -723,7 +748,36 @@ $Hero_ContentMaxWidth: 1280px;
                 line-height: 1.4;
                 font-size: 1rem;
                 margin: 0;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+
+                & + .SWWW_ContactList_ContactInformation {
+                    margin-top: 15px;
+                }
             }
+
+            > a {
+                width: 100%;
+                line-height: 1.4;
+                font-size: 1rem;
+                margin: 0;
+                transition: all ease-in-out g.$Site_General_Animation_Time;
+
+                &:hover, &:focus, &:active {
+                    cursor: pointer;
+                    color: c.$SWWW_Green;
+                }
+            }
+        }
+    }
+
+    &.SWWW_ImageList--421 {
+        grid-template-columns: repeat(4, 25%);
+
+        @media screen and (max-width: b.$Break_Point_Medium) {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 
@@ -853,6 +907,10 @@ ul.SWWW_ContactList {
             height: auto;
             padding: 0;
             margin: 0 0 15px 0;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
 
         h3 {
@@ -880,6 +938,10 @@ ul.SWWW_ContactList {
 .SWWW_Footer {
     width: 100%;
     background-color: c.$Black_Lighter;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
     > div {
         width: 100%;
