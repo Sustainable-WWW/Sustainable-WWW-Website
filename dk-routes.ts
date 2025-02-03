@@ -21,4 +21,8 @@ router.get("/ledige-stillinger", (_req: Request, res: Response) => {
     res.render("DK/stillinger");
 });
 
+router.get("/artikler", (_req: Request, res: Response) => {
+    res.render("DK/artikler");
+});
+
 export default router;
