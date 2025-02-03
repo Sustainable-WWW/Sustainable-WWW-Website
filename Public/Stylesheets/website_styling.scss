@@ -427,7 +427,7 @@ main.SWWW_Main {
 
         & +.SWWW_Row--Gray {
             > div {
-                padding: 40px g.$Site_Inner_Padding 100px g.$Site_Inner_Padding;
+                padding: 40px calc(g.$Site_Inner_Padding * 2) 100px calc(g.$Site_Inner_Padding * 2);
             }
         }
 
