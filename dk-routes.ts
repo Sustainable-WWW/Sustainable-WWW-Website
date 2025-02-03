@@ -17,4 +17,8 @@ router.get("/kontakt", (_req: Request, res: Response) => {
     res.render("DK/kontakt");
 });
 
+router.get("/ledige-stillinger", (_req: Request, res: Response) => {
+    res.render("DK/stillinger");
+});
+
 export default router;
