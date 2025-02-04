@@ -30,4 +30,11 @@ router.get("/artikler/hvad-gor-en-hjemmeside-baeredygtig", (_req: Request, res: 
     res.render("DK/Articles/hvad_goer_en_hjemmeside_baeredygtig");
 });
 
+router.get("/artikler/hvorfor-er-baeredygtige-hjemmesider-fremtiden", (_req: Request, res: Response) => {
+    res.render("DK/Articles/hvorfor_er_baeredygtige_hjemmesider_fremtiden");
+});
+
+
+"hvorfor-er-baeredygtige-hjemmesider-fremtiden"
+
 export default router;
