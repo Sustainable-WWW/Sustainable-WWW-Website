@@ -25,4 +25,9 @@ router.get("/artikler", (_req: Request, res: Response) => {
     res.render("DK/artikler");
 });
 
+// BLOG POSTS
+router.get("/artikler/hvad-gor-en-hjemmeside-baeredygtig", (_req: Request, res: Response) => {
+    res.render("DK/Articles/hvad_goer_en_hjemmeside_baeredygtig");
+});
+
 export default router;

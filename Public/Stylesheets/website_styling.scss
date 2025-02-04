@@ -387,6 +387,17 @@ header.SWWW_Header {
             row-gap: 35px;
         }
     }
+
+    &.SWWW_Grid6535 {
+        grid-template-columns: 1fr 380px;
+        column-gap: 55px;
+        row-gap: 55px;
+
+        @media screen and (max-width: b.$Break_Point_Medium) {
+            grid-template-columns: 1fr;
+            row-gap: 35px;
+        }
+    }
 }
 
 // MAIN
@@ -836,6 +847,26 @@ $Hero_ContentMaxWidth: 1280px;
     }
 }
 
+// ARTICLE WRAPPER
+article.SWWW_Article {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0 0 g.$Site_General_Element_Margin_Bottom 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
 // LINK LIST
 ul.SWWW_LinkList {
     width: 100%;
@@ -933,6 +964,82 @@ ul.SWWW_ContactList {
         }
     }
 }
+
+// TODO: SWWW CHECKLIST (WITH GREEN CHECK MARKS)
+ul.SWWW_CheckList {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 g.$Site_General_Element_Margin_Bottom 0;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    > li {
+        width: 100%;
+        list-style-position: inside;
+        position: relative;
+
+        &::before {
+            content: "✔";
+            color: c.$SWWW_Green;
+            font-size: 1.3rem;
+            margin-right: 5px;
+        }
+
+        p {
+            display: inline-block;
+        }
+    }
+}
+
+// COLUMN LIST
+ul.SWWW_ColumnList, ol.SWWW_ColumnList {
+    width: 100%;
+    list-style-position: inside;
+    column-count: 2;
+    gap: 55px;
+    padding: 0;
+
+    li {
+        width: 100%;
+        margin-bottom: 12px;
+        break-inside: avoid;    
+    }
+
+    @media screen and (max-width: b.$Break_Point_Small) {
+        column-count: 1;
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// INFO LIST
+ul.SWWW_InfoList {
+    width: 100%;
+    list-style-position: inside;
+    list-style-type: "— ";
+    padding: 0;
+    margin: 0 0 g.$Site_General_Element_Margin_Bottom 0;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    li {
+        width: 100%;
+        margin-bottom: 12px;
+        break-inside: avoid;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
 
 // FOOTER
 .SWWW_Footer {
