@@ -393,9 +393,8 @@ header.SWWW_Header {
         column-gap: 55px;
         row-gap: 55px;
 
-        @media screen and (max-width: b.$Break_Point_Medium) {
+        @media screen and (max-width: 950px) {
             grid-template-columns: 1fr;
-            row-gap: 35px;
         }
     }
 }
@@ -867,6 +866,38 @@ article.SWWW_Article {
     }
 }
 
+// BOOK PROMOTION
+.SWWW_BookPromotion {
+    width: 100%;
+    position: sticky;
+    top: 108px;
+    padding: 0 30px;
+
+    @media screen and (max-width: 950px) {
+        display: none;
+    }
+
+    svg {
+        display: block;
+        width: 100%;
+        max-width: 190px;
+        margin: 0 auto;
+    }
+
+    h2.SWWW_H2 {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        margin-top: 1.2rem;
+        margin-bottom: .7rem;
+    }
+
+    p.SWWW_P {
+        font-size: .9rem;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
+
 // LINK LIST
 ul.SWWW_LinkList {
     width: 100%;
@@ -965,7 +996,7 @@ ul.SWWW_ContactList {
     }
 }
 
-// TODO: SWWW CHECKLIST (WITH GREEN CHECK MARKS)
+// SWWW CHECKLIST (WITH GREEN CHECK MARKS)
 ul.SWWW_CheckList {
     width: 100%;
     list-style: none;
@@ -980,12 +1011,16 @@ ul.SWWW_CheckList {
         width: 100%;
         list-style-position: inside;
         position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
 
         &::before {
             content: "✔";
             color: c.$SWWW_Green;
             font-size: 1.3rem;
-            margin-right: 5px;
+            margin-right: 12px;
         }
 
         p {
@@ -1006,6 +1041,10 @@ ul.SWWW_ColumnList, ol.SWWW_ColumnList {
         width: 100%;
         margin-bottom: 12px;
         break-inside: avoid;    
+
+        .SWWW_P {
+            display: inline;
+        }
     }
 
     @media screen and (max-width: b.$Break_Point_Small) {
@@ -1036,6 +1075,10 @@ ul.SWWW_InfoList {
         
         &:last-child {
             margin-bottom: 0;
+        }
+
+        .SWWW_P {
+            display: inline;
         }
     }
 }
