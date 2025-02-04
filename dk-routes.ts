@@ -34,6 +34,10 @@ router.get("/artikler/hvorfor-er-baeredygtige-hjemmesider-fremtiden", (_req: Req
     res.render("DK/Articles/hvorfor_er_baeredygtige_hjemmesider_fremtiden");
 });
 
+router.get("/artikler/hvordan-en-baeredygtig-hjemmeside-styrker-dit-brand", (_req: Request, res: Response) => {
+    res.render("DK/Articles/hvordan_en_baeredygtig_hjemmeside_styrker_dit_brand");
+});
+
 
 "hvorfor-er-baeredygtige-hjemmesider-fremtiden"
 
