@@ -38,7 +38,8 @@ router.get("/artikler/hvordan-en-baeredygtig-hjemmeside-styrker-dit-brand", (_re
     res.render("DK/Articles/hvordan_en_baeredygtig_hjemmeside_styrker_dit_brand");
 });
 
-
-"hvorfor-er-baeredygtige-hjemmesider-fremtiden"
+router.get("/artikler/er-din-virksomheds-hjemmeside-en-klimasynder", (_req: Request, res: Response) => {
+    res.render("DK/Articles/er_din_virksomheds_hjemmeside_en_klimasynder");
+});
 
 export default router;
