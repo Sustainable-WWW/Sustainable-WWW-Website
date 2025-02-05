@@ -21,6 +21,10 @@ router.get("/ledige-stillinger", (_req: Request, res: Response) => {
     res.render("DK/stillinger");
 });
 
+router.get("/cookies-og-privatlivspolitik", (_req: Request, res: Response) => {
+    res.render("DK/cookie_og_privatlivspolitik");
+});
+
 router.get("/artikler", (_req: Request, res: Response) => {
     res.render("DK/artikler");
 });
