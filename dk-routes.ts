@@ -9,9 +9,14 @@ router.get("/cookies-og-privatlivspolitik", (_req, res) => res.render("DK/cookie
 
 router.get("/cases", (_req, res) => res.render("DK/cases"));
 
+// Dynamic routing for case studies
+router.get("/cases/:slug", (req, res) => 
+    res.render(`DK/CaseStudies/${req.params.slug.replace(/-/g, "_")}`)
+);
+
 router.get("/artikler", (_req, res) => res.render("DK/artikler"));
 
-// Dynamisk routing til blogposts
+// Dynamic routing for blogposts
 router.get("/artikler/:slug", (req, res) => 
     res.render(`DK/Articles/${req.params.slug.replace(/-/g, "_")}`)
 );

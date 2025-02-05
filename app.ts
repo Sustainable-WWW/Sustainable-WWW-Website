@@ -34,7 +34,8 @@ app.use("/en", en_routes);
 app.use("/se", se_routes);
 app.use("/dk", dk_routes);
 
-// TODO: SET UP 404 ROUTE
+// 404 route
+app.use((_req, res) => res.status(404).render("404"));
 
 app.listen(port, () => {
     console.log("SWWW Website - Running");

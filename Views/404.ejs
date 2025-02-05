@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="da-DK">
+<head>
+    <%- include('./Partials/Header_Inclusions.ejs', {
+        page_title: "404 - Sustainable WWW",
+        page_description: "",
+        page_image: "https://sustainablewww.dk/image.jpg",
+        page_url: "https://sustainablewww.dk",
+        page_full_url: "https://sustainablewww.dk/404",
+        page_keywords: "",
+        page_author: "Sustainable WWW",
+        page_locale: "da-DK"
+    }) %>
+</head>
+<body class="SWWW_Light">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "404 - Sustainable WWW",
+          "description": "",
+          "url": "https://sustainablewww.dk/404",
+          "image": "https://yourwebsite.com/image.jpg"
+        }
+    </script>
+    <%- include('./Partials/DK/Header.ejs') %>
+    <main class="SWWW_Main">
+        <div class="SWWW_Main_Inner">
+            <section class="SWWW_Row SWWW_Row--PaddingTop40">
+                <div>
+                    <div class="SWWW_InfoContainer">
+                        <h1 class="SWWW_H1">404</h1>
+                        <img src="/Images/190.Not-Found.svg" alt="Sustainable WWW 404 image" loading="eager" />
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <%- include('./Partials/DK/Footer.ejs') %>
+</body>
+</html>
