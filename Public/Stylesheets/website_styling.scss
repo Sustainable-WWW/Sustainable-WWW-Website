@@ -573,6 +573,12 @@ p, .SWWW_P {
 img {
     border: none;
     border-radius: 3px;
+
+    &.SWWW_SectionImage {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+    }
 }
 
 // BUTTONS
@@ -1038,6 +1044,17 @@ ul.SWWW_CheckList {
 
         p {
             display: inline-block;
+        }
+    }
+
+    &.SWWW_CheckList--2Columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 35px;
+        row-gap: 35px;
+
+        @media screen and (max-width: b.$Break_Point_Small) {
+            grid-template-columns: 1fr;
         }
     }
 }
