@@ -6,6 +6,7 @@ router.get("/om-os", (_req, res) => res.render("DK/om_os"));
 router.get("/kontakt", (_req, res) => res.render("DK/kontakt"));
 router.get("/ledige-stillinger", (_req, res) => res.render("DK/stillinger"));
 router.get("/cookies-og-privatlivspolitik", (_req, res) => res.render("DK/cookie_og_privatlivspolitik"));
+router.get("/services", (_req, res) => res.render("DK/services"));
 
 router.get("/cases", (_req, res) => res.render("DK/cases"));
 

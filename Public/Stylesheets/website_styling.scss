@@ -533,6 +533,11 @@ p, .SWWW_P {
         }
     }
 
+    &.P_Small {
+        font-size: .97rem;
+        line-height: 1.4;
+    }
+
     a {
         text-decoration: underline;
         color: c.$Text_Black;
@@ -1083,6 +1088,12 @@ ul.SWWW_InfoList {
 
         .SWWW_P {
             display: inline;
+        }
+    }
+
+    &.SWWW_InfoList--Competences {
+        > li {
+            line-height: 1.4;
         }
     }
 }
