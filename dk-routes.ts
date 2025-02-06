@@ -7,6 +7,10 @@ router.get("/kontakt", (_req, res) => res.render("DK/kontakt"));
 router.get("/ledige-stillinger", (_req, res) => res.render("DK/stillinger"));
 router.get("/cookies-og-privatlivspolitik", (_req, res) => res.render("DK/cookie_og_privatlivspolitik"));
 router.get("/services", (_req, res) => res.render("DK/services"));
+router.get("/services/webdesign", (_req, res) => res.render("DK/webdesign"));
+router.get("/services/webudvikling", (_req, res) => res.render("DK/webudvikling"));
+router.get("/services/analyse-og-optimering", (_req, res) => res.render("DK/analyse_og_optimering"));
+router.get("/services/hosting", (_req, res) => res.render("DK/hosting"));
 
 router.get("/cases", (_req, res) => res.render("DK/cases"));
 
