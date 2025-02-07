@@ -11,6 +11,7 @@ router.get("/services/webdesign", (_req, res) => res.render("DK/webdesign"));
 router.get("/services/webudvikling", (_req, res) => res.render("DK/webudvikling"));
 router.get("/services/analyse-og-optimering", (_req, res) => res.render("DK/analyse_og_optimering"));
 router.get("/services/hosting", (_req, res) => res.render("DK/hosting"));
+router.get("/sustainable-web-design-in-20-lessons", (_req, res) => res.render("DK/sustainable_web_design_in_20_lessons"));
 
 router.get("/cases", (_req, res) => res.render("DK/cases"));
 
