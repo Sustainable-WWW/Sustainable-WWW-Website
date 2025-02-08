@@ -502,6 +502,10 @@ h1, h2, h3, h4, h5, h6, .SWWW_H1, .SWWW_H2, .SWWW_H3, .SWWW_H4, .SWWW_H5, .SWWW_
     &.SWWW_CenteredHeadline {
         text-align: center;
     }
+
+    &.SWWW_MaxWidth1200 {
+        max-width: 1200px;
+    }
 }
 
 h1, .SWWW_H1 {
