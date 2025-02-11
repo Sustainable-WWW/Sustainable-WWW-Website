@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="da-DK">
+<head>
+    <%- include('../Partials/Header_Inclusions.ejs', {
+        page_title: "Ledige stillinger - Sustainable WWW",
+        page_description: "Vil du være med til at gøre internettet grønnere? Se vores ledige stillinger, eller send en uopfordret ansøgning til info@sustainablewww.org",
+        page_image: "https://sustainablewww.dk/image.jpg",
+        page_url: "https://sustainablewww.dk",
+        page_full_url: "https://sustainablewww.dk/ledige-stillinger",
+        page_keywords: "Sustainable WWW job, Sustainable WWW ledige stillinger, ledige jobs",
+        page_author: "Sustainable WWW",
+        page_locale: "da-DK"
+    }) %>
+</head>
+<body class="SWWW_Light">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Ledige stillinger - Sustainable WWW",
+          "description": "Vil du være med til at gøre internettet grønnere? Se vores ledige stillinger, eller send en uopfordret ansøgning til info@sustainablewww.org",
+          "url": "https://sustainablewww.dk/ledige-stillinger",
+          "image": "https://yourwebsite.com/image.jpg"
+        }
+    </script>
+    <%- include('../Partials/DK/Header.ejs') %>
+    <main class="SWWW_Main">
+        <div class="SWWW_Main_Inner">
+            <section class="SWWW_Row SWWW_Row--PaddingTop40">
+                <div>
+                    <h1 class="SWWW_H1">Ledige stillinger</h1>
+                    <p class="SWWW_P SWWW_Ingress P--MaxWidth900 P--MarginBottom80">Vi har desværre ingen ledige stillinger lige nu. Men du er altid velkommen til at sende os en uopfordret ansøgning på <a href="mailto:info@sustainablewww.org">info@sustainablewww.org</a>.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <%- include('../Partials/DK/Footer.ejs') %>
+</body>
+</html>
