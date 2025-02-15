@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../Partials/Header_Inclusions.ejs', {
+        page_title: "Contact us - Sustainable WWW",
+        page_description: "Do you have any questions or a project in mind? Contact us today at info@sustainablewww.org, and let’s create a more sustainable web solution together!",
+        page_image: "https://sustainablewww.dk/image.jpg",
+        page_url: "https://sustainablewww.com",
+        page_full_url: "https://sustainablewww.com/contact",
+        page_keywords: "Contact Sustainable WWW, Contact Sustainable WWW Sweden AB, Email Sustainable WWW, Call Sustainable WWW",
+        page_author: "Sustainable WWW",
+        page_locale: "en"
+    }) %>
+</head>
+<body class="SWWW_Light">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Contact us - Sustainable WWW",
+          "description": "Do you have any questions or a project in mind? Contact us today at info@sustainablewww.org, and let’s create a more sustainable web solution together!",
+          "url": "https://sustainablewww.com/contact",
+          "image": "https://yourwebsite.com/image.jpg"
+        }
+    </script>
+    <%- include('../Partials/EN/Header.ejs') %>
+    <main class="SWWW_Main">
+        <div class="SWWW_Main_Inner">
+            <section class="SWWW_Row SWWW_Row--PaddingTop40">
+                <div>
+                    <h1 class="SWWW_H1">Contact us</h1>
+                    <p class="SWWW_P SWWW_Ingress P--MaxWidth900 P--MarginBottom80">Do you have any questions, a project idea, or want to learn more about how we can help you? Don’t hesitate to reach out—we’re here to assist! Send us an email at <a href="mailto:info@sustainablewww.org">info@sustainablewww.org</a>, and we’ll get back to you.</p>
+                    <ul class="SWWW_ImageList SWWW_ImageList--421">
+                        <li>
+                            <div>
+                                <picture>
+                                    <source srcset="/Images/Michael-Andersen-Portrait-Medium-Sustainable-WWW-WebP.webp" type="image/webp" />
+                                    <img src="/ImagesMichael-Andersen-Portrait-Medium-Sustainable-WWW.jpg" alt="Portrait of Michael Andersen" loading="lazy" />
+                                </picture>
+                                <h3 class="SWWW_H3">Michael Andersen</h3>
+                                <p class="SWWW_ContactList_Title">Co-founder, Web developer</p>
+                                <a class="SWWW_ContactList_ContactInformation" href="tel:0046737744159" title="Click to call Michael Andersen">+46 73-774 41 59</a>
+                                <a class="SWWW_ContactList_ContactInformation" href="tel:004571626830" title="Click to call Michael Andersen">+45 71 62 68 30</a>
+                                <a class="SWWW_ContactList_ContactInformation" href="mailto:michael@sustainablewww.org" title="Click to send an email to Michael andersen">michael@sustainablewww.org</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <picture>
+                                    <source srcset="/Images/Max-Wallberg-Portrait-Medium-Sustainable-WWW-WebP.webp" type="image/webp" />
+                                    <img src="/Images/Max-Wallberg-Portrait-Medium-Sustainable-WWW.jpg" alt="Portrait of Max Wallberg" loading="lazy" />
+                                </picture>
+                                <h3 class="SWWW_H3">Max Wallberg</h3>
+                                <p class="SWWW_ContactList_Title">Co-founder, Sales</p>
+                                <a class="SWWW_ContactList_ContactInformation" href="tel:0046736315678" title="Click to call Max Wallberg">+46 73-631 56 78</a>
+                                <a class="SWWW_ContactList_ContactInformation" href="mailto:max@sustainablewww.org" title="Click to send an email to Max Wallberg">max@sustainablewww.org</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="SWWW_Row SWWW_Row--Gray">
+                <div>
+                    <h2 class="SWWW_H2">Join Our Team</h2>
+                    <p class="SWWW_P SWWW_Ingress P--MaxWidth900">Are you passionate about making a difference and driving the development of a greener internet? Check out our open positions or send an unsolicited application to <a href="mailto:info@sustainablewww.org">info@sustainablewww.org</a>.</p>
+                    <a href="/en/available-positions" class="SWWW_Button">See Open Positions</a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <%- include('../Partials/EN/Footer.ejs') %>
+</body>
+</html>

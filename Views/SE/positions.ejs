@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../Partials/Header_Inclusions.ejs', {
+        page_title: "Job Openings - Sustainable WWW",
+        page_description: "Want to help make the internet greener? Check out our job openings or send an unsolicited application to info@sustainablewww.org",
+        page_image: "https://sustainablewww.dk/image.jpg",
+        page_url: "https://sustainablewww.com",
+        page_full_url: "https://sustainablewww.com/available-positions",
+        page_keywords: "Sustainable WWW job, Sustainable WWW ledige stillinger, ledige jobs",
+        page_author: "Sustainable WWW",
+        page_locale: "en"
+    }) %>
+</head>
+<body class="SWWW_Light">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Job Openings - Sustainable WWW",
+          "description": "Want to help make the internet greener? Check out our job openings or send an unsolicited application to info@sustainablewww.org",
+          "url": "https://sustainablewww.com/available-positions",
+          "image": "https://yourwebsite.com/image.jpg"
+        }
+    </script>
+    <%- include('../Partials/EN/Header.ejs') %>
+    <main class="SWWW_Main">
+        <div class="SWWW_Main_Inner">
+            <section class="SWWW_Row SWWW_Row--PaddingTop40">
+                <div>
+                    <h1 class="SWWW_H1">Job Openings</h1>
+                    <p class="SWWW_P SWWW_Ingress P--MaxWidth900 P--MarginBottom80">Unfortunately, we have no job openings at the moment. However, you are always welcome to send us an unsolicited application at <a href="mailto:info@sustainablewww.org">info@sustainablewww.org</a>.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <%- include('../Partials/EN/Footer.ejs') %>
+</body>
+</html>
