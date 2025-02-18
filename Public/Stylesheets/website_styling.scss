@@ -506,6 +506,10 @@ h1, h2, h3, h4, h5, h6, .SWWW_H1, .SWWW_H2, .SWWW_H3, .SWWW_H4, .SWWW_H5, .SWWW_
     &.SWWW_MaxWidth1200 {
         max-width: 1200px;
     }
+
+    &.SWWW_Balance {
+        text-wrap: balance;
+    }
 }
 
 h1, .SWWW_H1 {
@@ -564,6 +568,10 @@ p, .SWWW_P {
 
     &.P--MarginBottom80 {
         margin-bottom: 80px;
+    }
+
+    &.P--MarginBottom10 {
+        margin-bottom: 10px !important;
     }
 
     &:first-child {
@@ -1065,8 +1073,9 @@ ul.SWWW_CheckList {
             margin-right: 12px;
         }
 
-        p {
+        p.SWWW_P {
             display: inline-block;
+            margin: 0;
         }
     }
 
@@ -1139,6 +1148,10 @@ ul.SWWW_InfoList {
         > li {
             line-height: 1.4;
         }
+    }
+
+    &.SWWW_InfoList--MaxWidth900 {
+        max-width: 900px;
     }
 }
 
