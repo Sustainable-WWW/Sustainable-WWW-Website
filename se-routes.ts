@@ -13,10 +13,10 @@ router.get("/tjanster/analys-och-optimering", (_req, res) => res.render("SE/anal
 router.get("/tjanster/hosting", (_req, res) => res.render("SE/hosting"));
 router.get("/sustainable-web-design-in-20-lessons", (_req, res) => res.render("SE/sustainable_web_design_in_20_lessons"));
 
-router.get("/cases", (_req, res) => res.render("SE/cases"));
+router.get("/fallstudier", (_req, res) => res.render("SE/cases"));
 
 // Dynamic routing for case studies
-router.get("/cases/:slug", (req, res) => 
+router.get("/fallstudier/:slug", (req, res) => 
     res.render(`SE/CaseStudies/${req.params.slug.replace(/-/g, "_")}`)
 );
 
