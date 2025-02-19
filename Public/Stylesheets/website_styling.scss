@@ -657,7 +657,7 @@ $Hero_ContentMaxWidth: 1280px;
         width: 100%;
         max-width: $Hero_ContentMaxWidth;
         height: auto;
-        margin-bottom: 4%;
+        margin-bottom: 3%;
 
         path:not(.cls-1):not(.cls-2) {
             fill: c.$Text_Black;
@@ -1487,6 +1487,15 @@ ul.SWWW_IconList {
             }
         }
     }
+}
+
+// LINK PIN - Used for section pins to direct them to the correct place
+.SWWW_Section_LinkPin {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 1px;
+    height: 1px;
 }
 
 /*

@@ -9,7 +9,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(helmet.hidePoweredBy());
-//app.use(helmet.noSniff());
 app.use(helmet.frameguard());
 app.use(helmet.xssFilter());
 app.use(bodyParser.urlencoded({ extended: true }));
