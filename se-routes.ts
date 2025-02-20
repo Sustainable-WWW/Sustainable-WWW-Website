@@ -20,7 +20,7 @@ router.get("/fallstudier/:slug", (req, res) =>
     res.render(`SE/CaseStudies/${req.params.slug.replace(/-/g, "_")}`)
 );
 
-router.get("/artiklar", (_req, res) => res.render("SE/articles"));
+router.get("/artiklar", (_req, res) => res.render("SE/artiklar"));
 
 // Dynamic routing for blogposts
 router.get("/artiklar/:slug", (req, res) => 
