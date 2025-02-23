@@ -662,6 +662,11 @@ $Hero_ContentMaxWidth: 1280px;
     display: block;
     width: 100%;
     height: auto;
+    margin-bottom: g.$Site_General_Element_Margin_Bottom;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 
     // LOGO ANIMATION
     .cls-4 {
@@ -899,6 +904,8 @@ $Hero_ContentMaxWidth: 1280px;
         display: inline-block;
         width: 100%;
         margin-bottom: .5rem;
+        hyphens: none;
+        text-overflow: unset;
 
         &:hover {
             cursor: pointer;
