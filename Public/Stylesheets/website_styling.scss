@@ -27,8 +27,6 @@ body {
     font-style: f.$Paragraph_Font_Style_Normal;
     line-height: 1.75;
     font-size: 18px;
-    //hyphens: auto;
-    //overflow-wrap: break-word;
     letter-spacing: -.7px;
     color: c.$Black_Lighter;
 
@@ -465,12 +463,6 @@ main.SWWW_Main {
         }
     }
 
-    /*&:first-child {
-        > div {
-            padding: 40px calc(g.$Site_Inner_Padding * 2) 100px calc(g.$Site_Inner_Padding * 2);
-        }
-    }*/
-
     &:first-child > div {
         @media screen and (max-width: b.$Break_Point_Small) {
             padding-top: 25px;
@@ -508,6 +500,10 @@ h1, h2, h3, h4, h5, h6, .SWWW_H1, .SWWW_H2, .SWWW_H3, .SWWW_H4, .SWWW_H5, .SWWW_
 
     &.SWWW_DoubleMarginBottom {
         margin-bottom: 3.8rem;
+
+        @media screen and (max-width: b.$Break_Point_Small) {
+            margin-bottom: 2.7rem;
+        }
     }
 
     &.SWWW_CenteredHeadline {
