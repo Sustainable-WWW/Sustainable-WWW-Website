@@ -27,6 +27,8 @@ body {
     font-style: f.$Paragraph_Font_Style_Normal;
     line-height: 1.75;
     font-size: 18px;
+    //hyphens: auto;
+    //overflow-wrap: break-word;
     letter-spacing: -.7px;
     color: c.$Black_Lighter;
 
@@ -480,6 +482,8 @@ h1, h2, h3, h4, h5, h6, .SWWW_H1, .SWWW_H2, .SWWW_H3, .SWWW_H4, .SWWW_H5, .SWWW_
     font-style: f.$Headline_Font_Style_Normal;
     letter-spacing: -.7px;
     text-wrap: pretty;
+    hyphens: auto;
+    overflow-wrap: break-word;
     margin-top: 2.25rem;
     margin-bottom: 1rem;
 
@@ -769,7 +773,7 @@ $Hero_ContentMaxWidth: 1280px;
         }
 
         h1.SWWW_H1.SWWW_H1--NotScalable {
-            font-size: 60px;
+            font-size: 52px;
             line-height: 1.2;
         }
 
