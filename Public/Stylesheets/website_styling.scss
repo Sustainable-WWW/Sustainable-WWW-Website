@@ -730,6 +730,10 @@ $Hero_ContentMaxWidth: 1280px;
     }
 
     > a:not(.SWWW_Button) {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
         font-size: 23.68px;
         color: c.$Text_Black;
         text-decoration: none;
@@ -738,6 +742,12 @@ $Hero_ContentMaxWidth: 1280px;
         &:hover, &:focus, &:active {
             cursor: pointer;
             color: c.$SWWW_Green;
+        }
+
+        svg {
+            width: 20px !important;
+            height: 20px !important;
+            margin: 0 0 0px 7px !important;
         }
     }
 
