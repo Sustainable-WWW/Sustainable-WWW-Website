@@ -1063,6 +1063,10 @@ ul.SWWW_LinkList {
                 cursor: pointer;
                 color: c.$SWWW_Green;
             }
+
+            @media screen and (max-width: b.$Break_Point_Small) {
+                padding-left: 0;
+            }
         }
     }
 }
@@ -1090,7 +1094,6 @@ ul.SWWW_ContactList {
 
     @media screen and (max-width: b.$Break_Point_Small) {
         grid-template-columns: 1fr;
-
     }
 
     > li {
