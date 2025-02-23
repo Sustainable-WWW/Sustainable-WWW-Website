@@ -56,3 +56,37 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// PAGE FADE-IN TRANSITION
+document.addEventListener('DOMContentLoaded', () => {
+    const faders = document.querySelectorAll('.SWWW_PageTransitionEffect');
+    
+    const appearOptions = {
+      threshold: 0.15,
+      rootMargin: "0px 0px -100px 0px"
+    };
+  
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        
+        entry.target.classList.add('SWWW_PageTransitionEffect--Visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+  
+    const setInitialVisibility = (element) => {
+      const rect = element.getBoundingClientRect();
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+      
+      if (rect.top < windowHeight) {
+            element.classList.add('SWWW_PageTransitionEffect--AlwaysVisible');
+      } else {
+            appearOnScroll.observe(element);
+      }
+    };
+  
+    faders.forEach(fader => {
+        setInitialVisibility(fader);
+    });
+  });

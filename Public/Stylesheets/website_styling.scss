@@ -1649,3 +1649,29 @@ ul.SWWW_IconList {
         opacity: 1;
     }
 }
+
+.SWWW_PageTransitionEffect {
+    > div {
+        opacity: 0;
+        transform: translateY(3vh);
+        visibility: hidden;
+        transition: opacity 0.3s ease-out, transform .5s ease-out;
+        will-change: opacity, visibility;
+    }
+
+    &.SWWW_PageTransitionEffect--Visible {
+        > div {
+            opacity: 1;
+            transform: none;
+            visibility: visible;
+        }
+    }
+
+    &.SWWW_PageTransitionEffect--AlwaysVisible {
+        > div {
+            opacity: 1;
+            transform: none;
+            visibility: visible;
+        }
+    }
+}
