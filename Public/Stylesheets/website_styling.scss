@@ -407,6 +407,17 @@ header.SWWW_Header {
             }
         }
     }
+
+    &.SWWW_Grid6535--BreakAt1025 {
+        @media screen and (max-width: 1025px) {
+            grid-template-columns: 1fr;
+            row-gap: 35px;
+
+            > div:last-child {
+                display: none;
+            }
+        }
+    }
 }
 
 // MAIN
