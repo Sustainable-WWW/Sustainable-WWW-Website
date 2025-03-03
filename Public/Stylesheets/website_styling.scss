@@ -603,6 +603,10 @@ p, .SWWW_P {
         }
     }
 
+    &.P--MarginBottom60 {
+        margin-bottom: 60px !important;
+    }
+
     &.P--MarginBottom10 {
         margin-bottom: 10px !important;
     }
@@ -1262,6 +1266,10 @@ ul.SWWW_InfoList {
 
     &.SWWW_InfoList--MaxWidth900 {
         max-width: 900px;
+    }
+
+    &.SWWW_InfoList--NoDash {
+        list-style-type: "";
     }
 }
 
