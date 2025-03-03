@@ -1315,6 +1315,14 @@ ul.SWWW_IconList {
             }
         }
     }
+
+    &.SWWW_IconList--2-1 {
+        grid-template-columns: repeat(2, 1fr);
+
+        @media screen and (max-width: 780px) {
+            grid-template-columns: 1fr;
+        }
+    }
 }
 
 // FLOATING INFO CONTAINER
