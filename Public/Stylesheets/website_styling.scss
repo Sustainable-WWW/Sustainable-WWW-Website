@@ -723,6 +723,20 @@ $Hero_ContentMaxWidth: 1280px;
         &.SWWW_H1--BookTitle {
             max-width: 900px;
         }
+
+        &.SWWW_Hero_Headline--Desktop {
+            @media screen and (max-width: b.$Break_Point_Medium) {
+                display: none;
+            }
+        }
+
+        &.SWWW_Hero_Headline--Tablet {
+            display: none;
+
+            @media screen and (max-width: b.$Break_Point_Medium) {
+                display: block;
+            }
+        }
     }
 
     .SWWW_P {
