@@ -14,11 +14,68 @@
 <body class="SWWW_Light">
     <script type="application/ld+json">
         {
-          "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "Sustainable and efficient web hosting for your business – Choose green energy or Raspberry Pi solution",
-          "description": "Get reliable web hosting with green energy or Raspberry Pi solution. Optimize performance and reduce costs for your business.",
-          "url": "https://sustainablewww.com/services/hosting
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebPage",
+                "name": "Sustainable and efficient web hosting for your business – Choose green energy or Raspberry Pi solution",
+                "description": "Get reliable web hosting with green energy or Raspberry Pi solution. Optimize performance and reduce costs for your business.",
+                "url": "https://sustainablewww.com/services/hosting"
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "What Does Green Hosting Mean?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Green hosting is powered by 100% renewable energy, such as wind and solar power, to reduce CO₂ emissions and environmental impact."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Is Sustainable Hosting More Expensive?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "No, our solutions are cost-effective and save money in the long run through lower energy costs and optimized performance."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Does It Work for All Websites?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, our sustainable hosting suits all types of websites, regardless of size, complexity, or project size."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can I Switch Hosting Plans?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes, you can easily switch hosting plans if your needs change – we offer scalable solutions."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What Type of Support Do You Offer?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "We provide fast and reliable support via phone and email, along with 24/7 monitoring to ensure optimal performance."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How Is the Pricing Structured?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Our pricing is based on standard rates adjusted to your specific needs. Contact us for a quote!"
+                    }
+                  }
+                ]
+              }
+            ]
         }
     </script>
     <%- include('../Partials/EN/Header.ejs') %>
@@ -113,7 +170,7 @@
             <section class="SWWW_Row SWWW_Row--Gray SWWW_Row--PaddingTop40 SWWW_PageTransitionEffect">
                 <div>
                     <h2 class="SWWW_H2 SWWW_DoubleMarginBottom SWWW_MaxWidth1200 SWWW_Balance">Our Expertise</h2>
-                    <ul class="SWWW_InfoList">
+                    <ul class="SWWW_InfoList SWWW_InfoList--MaxWidth900">
                         <li>
                             <p class="SWWW_P P--MaxWidth900"><strong>Green Hosting in Sweden</strong> – We host your website in a data center using 100% renewable energy, recycling excess heat to warm local homes.</p>
                         </li>
@@ -186,7 +243,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#f3f3f3"><path d="m320.23-107.69-42.54-42.54L607.46-480 277.69-809.77l42.54-42.54L692.54-480 320.23-107.69Z"/></svg>
                         </h4>
                         <div class="SWWW_FAQ--Answer">
-                            <p class="SWWW_P P--MaxWidth900">Our pricing is based on standard rates adjusted to your specific needs. Contact us for a quote!</p>
+                            <p class="SWWW_P P--MaxWidth900">Our pricing is based on standard rates adjusted to your specific needs. <a href="/contact">Contact us</a> for a quote!</p>
                         </div>
                     </div>
                 </div>

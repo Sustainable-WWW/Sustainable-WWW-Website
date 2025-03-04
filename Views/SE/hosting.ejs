@@ -15,10 +15,67 @@
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "Hållbar och effektiv webbhosting för ditt företag – Välj grön energi eller Raspberry Pi-lösning",
-          "description": "Få pålitlig webbhosting med grön energi eller Raspberry Pi-lösning. Optimera prestanda och sänk kostnaderna för ditt företag.",
-          "url": "https://sustainablewww.se/tjanster/hosting
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "name": "Hållbar och effektiv webbhosting för ditt företag – Välj grön energi eller Raspberry Pi-lösning",
+              "description": "Få pålitlig webbhosting med grön energi eller Raspberry Pi-lösning. Optimera prestanda och sänk kostnaderna för ditt företag.",
+              "url": "https://sustainablewww.se/tjanster/hosting"
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Vad innebär grön hosting?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Grön hosting drivs av 100 % förnybar energi, som vind- och solkraft, för att minska koldioxidutsläpp och miljöpåverkan."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Är hållbar hosting dyrare?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nej, våra lösningar är kostnadseffektiva och sparar pengar på lång sikt genom lägre energikostnader och optimerad prestanda."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Fungerar det för alla webbplatser?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, vår hållbara hosting passar alla typer av webbplatser, oavsett storlek, komplexitet eller projektstorlek."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Kan jag byta hostingplan?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, du kan enkelt byta hostingplan om dina behov ändras – vi erbjuder skalbara lösningar."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Vilken typ av support erbjuder ni?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Vi erbjuder snabb och pålitlig support via telefon och e-post, samt kontinuerlig övervakning dygnet runt för att säkerställa optimal prestanda."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Hur ser prisstrukturen ut?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Vår prisstruktur är baserad på standardpriser som justeras efter dina specifika behov. Kontakta oss för en offert!"
+                  }
+                }
+              ]
+            }
+          ]
         }
     </script>
     <%- include('../Partials/SE/Header.ejs') %>
@@ -113,7 +170,7 @@
             <section class="SWWW_Row SWWW_Row--Gray SWWW_Row--PaddingTop40 SWWW_PageTransitionEffect">
                 <div>
                     <h2 class="SWWW_H2 SWWW_DoubleMarginBottom SWWW_MaxWidth1200 SWWW_Balance">Vår kompetens</h2>
-                    <ul class="SWWW_InfoList">
+                    <ul class="SWWW_InfoList SWWW_InfoList--MaxWidth900">
                         <li>
                             <p class="SWWW_P P--MaxWidth900"><strong>Grön hosting i Sverige</strong> – Vi hostar din webbplats i ett datacenter som använder 100 % förnybar energi och återvinner överskottsvärme för att värma lokala bostäder.</p>
                         </li>
