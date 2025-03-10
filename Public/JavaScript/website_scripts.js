@@ -104,7 +104,7 @@ if (videoPlaceholder) {
             video.src = videoSrc;
             video.controls = true;
             video.autoplay = true;
-            video.muted = false;
+            video.muted = true;
             video.style.width = '100%';
             video.style.height = 'auto';
             this.replaceWith(video);
