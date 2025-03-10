@@ -91,3 +91,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     faders.forEach(fader => setInitialVisibility(fader));
 });
+
+// VIDEO PLAYER ELEMENT
+// Switches the placeholder image with the video on click.
+const videoPlaceholder = document.getElementById('SWWW_Explainer_Video');
+
+if (videoPlaceholder) {
+    videoPlaceholder.addEventListener('click', function() {
+        const videoSrc = this.getAttribute('data-video');
+        if (videoSrc) {
+            const video = document.createElement('video');
+            video.src = videoSrc;
+            video.controls = true;
+            video.autoplay = true;
+            video.muted = false;
+            video.style.width = '100%';
+            video.style.height = 'auto';
+            this.replaceWith(video);
+        } else {
+            console.error('No data-video attribute found.');
+        }
+    });
+} else {
+    console.error('Element with ID "SWWW_Explainer_Video" not found.');
+}

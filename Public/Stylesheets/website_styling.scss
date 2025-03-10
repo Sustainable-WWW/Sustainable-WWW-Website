@@ -1630,6 +1630,15 @@ ul.SWWW_IconList {
 }
 
 /*
+    VIDEO PLAYER AND PLACEHOLDER
+*/
+.SWWW_VideoContainer {
+    picture:hover {
+        cursor: pointer;
+    }
+}
+
+/*
     ANIMATION AND TRANSITION CLASSES
 */
 .Hover--Scale {
