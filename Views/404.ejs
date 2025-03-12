@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="da-DK">
+<html lang="<%= htmlLang %>">
 <head>
     <%- include('./Partials/Header_Inclusions.ejs', {
         page_title: "404 - Sustainable WWW",
         page_description: "",
-        page_url: "https://sustainablewww.com",
-        page_full_url: "https://sustainablewww.com/404",
+        page_url: "https://sustainablewww" + domainEnding,
+        page_full_url: "https://sustainablewww" + domainEnding + "/404",
         page_keywords: "",
         page_author: "Sustainable WWW",
-        page_locale: "da-DK"
+        page_locale: htmlLang
     }) %>
 </head>
 <body class="SWWW_Light">
@@ -18,10 +18,10 @@
           "@type": "WebPage",
           "name": "404 - Sustainable WWW",
           "description": "",
-          "url": "https://sustainablewww.dk/com"
+          "url": "https://sustainablewww<%= domainEnding %>/404"
         }
     </script>
-    <%- include('./Partials/DK/Header.ejs') %>
+    <%- include(headerIncludeStr) %>
     <main class="SWWW_Main">
         <div class="SWWW_Main_Inner">
             <section class="SWWW_Row SWWW_Row--PaddingTop40">
@@ -34,6 +34,6 @@
             </section>
         </div>
     </main>
-    <%- include('./Partials/DK/Footer.ejs') %>
+    <%- include(footerIncludeStr) %>
 </body>
 </html>

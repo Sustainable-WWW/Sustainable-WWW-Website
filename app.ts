@@ -3,7 +3,7 @@ import express from "express";
 import path from "path";
 import bodyParser from "body-parser";
 
-function createLocalizedApp(languageRoutes: express.Router): express.Express {
+function createLocalizedApp(languageRoutes: express.Router, htmlLang: string, headerIncludeStr: string, footerIncludeStr: string, domainEnding: string): express.Express {
     const app = express();
     
     // Security middleware
@@ -33,7 +33,12 @@ function createLocalizedApp(languageRoutes: express.Router): express.Express {
     app.use("/", languageRoutes);
     
     // Centralized 404 handling
-    app.use((_req, res) => res.status(404).render("404"));
+    app.use((_req, res) => res.status(404).render("404", { 
+        htmlLang: htmlLang,
+        headerIncludeStr: headerIncludeStr,
+        footerIncludeStr: footerIncludeStr,
+        domainEnding: domainEnding
+    }));
     
     return app;
 }
@@ -42,9 +47,9 @@ import en_routes from "./en-routes";
 import se_routes from "./se-routes";
 import dk_routes from "./dk-routes";
 
-const enApp = createLocalizedApp(en_routes);
-const seApp = createLocalizedApp(se_routes);
-const dkApp = createLocalizedApp(dk_routes);
+const enApp = createLocalizedApp(en_routes, "en", "./Partials/EN/Header.ejs", "./Partials/EN/Footer.ejs", ".com");
+const seApp = createLocalizedApp(se_routes, "sv", "./Partials/SE/Header.ejs", "./Partials/SE/Footer.ejs", ".se");
+const dkApp = createLocalizedApp(dk_routes, "da-DK", "./Partials/DK/Header.ejs", "./Partials/DK/Footer.ejs", ".dk");
 
 enApp.listen(1001, () => 
     console.log("English server: http://192.168.50.34:1001"));
