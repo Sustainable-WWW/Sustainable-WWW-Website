@@ -636,6 +636,35 @@ img {
     }
 }
 
+// BUTTON ROW
+.SWWW_ButtonRow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    .SWWW_Button {
+        margin-right: 30px;
+        margin-bottom: 0;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    @media screen and (max-width: 690px) {
+        .SWWW_Button {
+            width: 100%;
+            text-align: center;
+
+            &:first-child {
+                margin-right: 0;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
 // BUTTONS
 .SWWW_Button {
     display: inline-block;
@@ -745,6 +774,10 @@ $Hero_ContentMaxWidth: 1280px;
 
     .SWWW_P {
         margin-bottom: 2.3%;
+    }
+
+    .SWWW_ButtonRow {
+        margin-top: 50px;
     }
 
     > a:not(.SWWW_Button) {
