@@ -5,6 +5,7 @@
          url('../../Fonts/TTF/Poppins-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -13,6 +14,7 @@
          url('../../Fonts/TTF/Poppins-BlackItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -21,6 +23,7 @@
          url('../../Fonts/TTF/Poppins-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 // Paragraphs
@@ -30,6 +33,7 @@
          url('../../Fonts/TTF/WorkSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -38,6 +42,7 @@
          url('../../Fonts/TTF/WorkSans-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -46,6 +51,7 @@
          url('../../Fonts/TTF/WorkSans-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -54,6 +60,7 @@
          url('../../Fonts/TTF/WorkSans-BoldItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 
 $Headline_Font: Poppins, sans-serif;

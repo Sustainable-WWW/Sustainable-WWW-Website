@@ -903,7 +903,7 @@ $Hero_ContentMaxWidth: 1280px;
             }
             
 
-            h3 {
+            h2, h3{
                 width: 100%;
                 font-size: 1rem;
                 font-weight: f.$Headline_Font_Weight;
@@ -1525,7 +1525,7 @@ ul.SWWW_IconList {
                     font-style: f.$Paragraph_Font_Style_Normal;
                     color: c.$Text_White;
                     font-size: .9rem;
-                    line-height: 1.4rem;
+                    line-height: 1.55rem;
                     letter-spacing: -.7px;
                     text-decoration: none;
                 }
