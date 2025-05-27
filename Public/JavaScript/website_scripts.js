@@ -112,6 +112,4 @@ if (videoPlaceholder) {
             console.error('No data-video attribute found.');
         }
     });
-} else {
-    console.error('Element with ID "SWWW_Explainer_Video" not found.');
 }

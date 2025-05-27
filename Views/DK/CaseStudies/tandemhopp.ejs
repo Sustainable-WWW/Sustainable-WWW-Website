@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="da-DK">
+<html lang="da">
 <head>
     <%- include('../../Partials/Header_Inclusions.ejs', {
         page_title: "Case Study: Optimeret Booking & Digitale Waivers | Tandemhopp.se",
@@ -18,7 +18,7 @@
           "@type": "WebPage",
           "name": "Case Study: Optimeret Booking & Digitale Waivers | Tandemhopp.se",
           "description": "Se hvordan vi forbedrede Tandemhopp.se med hurtigere booking, digitale waivers og en brugervenlig oplevelse. Læs casestudiet her!",
-          "url": "https://sustainablewww.dk/cases/tandemhopp",
+          "url": "https://sustainablewww.dk/cases/tandemhopp"
         }
     </script>
     <%- include('../../Partials/DK/Header.ejs') %>
@@ -29,8 +29,10 @@
                     <article class="SWWW_Article">
                         <h1 class="SWWW_H1 SWWW_MaxWidth1200">Tandemhopp.se - Effektivisering af booking, waivers og faldskærmsudspring</h1>
                         <picture>
+                            <source srcset="/Images/Case-Studies/Tandemhopp/Tandemhopp-SE-Case-Study-Top-Image-Mobile.webp" type="image/webp" media="(max-width: 600px)" />
+                            <source srcset="/Images/Case-Studies/Tandemhopp/Tandemhopp-SE-Case-Study-Top-Image-Mobile.jpg" type="image/jpeg" media="(max-width: 600px)" />
                             <source type="image/webp" srcset="/Images/Case-Studies/Tandemhopp/Tandemhopp-SE-Case-Study-Top-Image-Webp.webp" />
-                            <img src="/Images/Case-Studies/Tandemhopp/Tandemhopp-SE-Case-Study-Top-Image.jpg" alt="Mobil mockup af forsiden på tandemhopp.se" loading="eager" />
+                            <img src="/Images/Case-Studies/Tandemhopp/Tandemhopp-SE-Case-Study-Top-Image.jpg" alt="Mobil mockup af forsiden på tandemhopp.se" loading="eager" style="aspect-ratio: 40/17" />
                         </picture>
                         <p class="SWWW_P P--MaxWidth900">Tandemhopp.se, drevet af <a href="https://skydivesweden.se" target="_blank" rel="nofollow noopener noreferrer">Skydive Sweden</a>, er en af de førende udbydere af tandem-faldskærmsudspring i det vestlige Sverige, med over 1.000 spring om året. Virksomheden tilbyder også gavekort til faldskærmsentusiaster, hvilket gør dem til et populært valg for både eventyrlystne sjæle og dem, der ønsker at give en uforglemmelig oplevelse i gave.</p>
                         <h2 class="SWWW_H2 SWWW_MaxWidth1200">Udfordringer</h2>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="da-DK">
+<html lang="da">
 <head>
     <%- include('../Partials/Header_Inclusions.ejs', {
         page_title: "Kontakt os - Sustainable WWW",
@@ -12,15 +12,36 @@
     }) %>
 </head>
 <body class="SWWW_Light">
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "Kontakt os - Sustainable WWW",
-          "description": "Har du spørgsmål eller et projekt i tankerne? Kontakt os i dag på info@sustainablewww.org, og lad os sammen skabe en mere bæredygtig web-løsning!",
-          "url": "https://sustainablewww.dk/kontakt"
-        }
-    </script>
+<script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Kontakt os - Sustainable WWW",
+    "description": "Har du spørgsmål eller et projekt i tankerne? Kontakt os i dag på info@sustainablewww.org, og lad os sammen skabe en mere bæredygtig web-løsning!",
+    "url": "https://sustainablewww.dk/kontakt",
+    "mainEntity": {
+        "@type": "Organization",
+        "name": "Sustainable WWW",
+        "url": "https://sustainablewww.dk",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+46-31-79-03-740",
+            "contactType": "Customer Service",
+            "email": "info@sustainablewww.org",
+            "areaServed": "SE",
+            "availableLanguage": ["Danish", "Swedish", "English"]
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Gräsmånadsgatan 30",
+            "postalCode": "415 48",
+            "addressLocality": "Göteborg",
+            "addressCountry": "SE"
+        },
+        "taxID": "559470-7167"
+    }
+    }
+</script>
     <%- include('../Partials/DK/Header.ejs') %>
     <main class="SWWW_Main">
         <div class="SWWW_Main_Inner">
@@ -42,7 +63,7 @@
                             <p class="SWWW_P SWWW_Ingress"><strong>Organisationsnummer:</strong> 559470-7167</p>
                         </li>
                     </ul>
-                    <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/michael-sustainablewww/45min?hide_event_type_details=1&hide_gdpr_banner=1&text_color=1e1e1e&primary_color=1e1e1e'});return false;" class="SWWW_Button" rel="noopener noreferrer">Book et gratis møde med Michael</button>
+                    <a href="https://app.reclaim.ai/m/swww-michael/digital-meeting" class="SWWW_Button" rel="noopener noreferrer" target="_blank">Book et gratis møde med Michael</a>
                 </div>
             </section>
             <section class="SWWW_Row SWWW_Row--PaddingTop40 SWWW_PageTransitionEffect">
@@ -53,24 +74,24 @@
                             <div>
                                 <picture>
                                     <source srcset="/Images/Michael-Andersen-Portrait-Medium-Sustainable-WWW-WebP.webp" type="image/webp" />
-                                    <img src="/ImagesMichael-Andersen-Portrait-Medium-Sustainable-WWW.jpg" alt="Portræt af Michael Andersen" loading="lazy" />
+                                    <img src="/Images/Michael-Andersen-Portrait-Medium-Sustainable-WWW.jpg" alt="Portræt af Michael Andersen" loading="lazy" style="aspect-ratio: 650/951" />
                                 </picture>
                                 <h3 class="SWWW_H3">Michael Andersen</h3>
                                 <p class="SWWW_ContactList_Title">Grundlægger, Webudvikler</p>
-                                <a class="SWWW_ContactList_ContactInformation" href="tel:+46317903740" title="Klik for at ringe til Michael Andersen">031 79 03 740</a>
-                                <a class="SWWW_ContactList_ContactInformation" href="mailto:michael@sustainablewww.org" title="Klik for at sende en e-mail til Michael Andersen">michael@sustainablewww.org</a>
+                                <a class="SWWW_ContactList_ContactInformation" href="tel:+46317903740" title="Ring til Michael Andersen">031 79 03 740</a>
+                                <a class="SWWW_ContactList_ContactInformation" href="mailto:michael@sustainablewww.org" title="Send e-mail til Michael Andersen">michael@sustainablewww.org</a>
                             </div>
                         </li>
                         <li>
                             <div>
                                 <picture>
                                     <source srcset="/Images/Max-Wallberg-Portrait-Medium-Sustainable-WWW-WebP.webp" type="image/webp" />
-                                    <img src="/Images/Max-Wallberg-Portrait-Medium-Sustainable-WWW.jpg" alt="Portræt af Max Wallberg" loading="lazy" />
+                                    <img src="/Images/Max-Wallberg-Portrait-Medium-Sustainable-WWW.jpg" alt="Portræt af Max Wallberg" loading="lazy" style="aspect-ratio: 650/951" />
                                 </picture>
                                 <h3 class="SWWW_H3">Max Wallberg</h3>
                                 <p class="SWWW_ContactList_Title">Grundlægger, Fortaler</p>
-                                <a class="SWWW_ContactList_ContactInformation" href="tel:+46317903740" title="Klik for at ringe til Max Wallberg">031 79 03 740</a>
-                                <a class="SWWW_ContactList_ContactInformation" href="mailto:max@sustainablewww.org" title="Klik for at sende en e-mail til Max Wallberg">max@sustainablewww.org</a>
+                                <a class="SWWW_ContactList_ContactInformation" href="tel:+46317903740" title="Ring til Max Wallberg">031 79 03 740</a>
+                                <a class="SWWW_ContactList_ContactInformation" href="mailto:max@sustainablewww.org" title="Send e-mail til Max Wallberg">max@sustainablewww.org</a>
                             </div>
                         </li>
                     </ul>

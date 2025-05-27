@@ -13,14 +13,49 @@
 </head>
 <body class="SWWW_Light">
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "Contact us - Sustainable WWW",
-          "description": "Do you have any questions or a project in mind? Contact us today at info@sustainablewww.org, and let’s create a more sustainable web solution together!",
-          "url": "https://sustainablewww.com/contact"
-        }
-    </script>
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Contact us - Sustainable WWW",
+  "description": "Do you have any questions or a project in mind? Contact us today at info@sustainablewww.org, and let’s create a more sustainable web solution together!",
+  "url": "https://sustainablewww.com/contact",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Sustainable WWW",
+    "url": "https://sustainablewww.com",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+46-31-79-03-740",
+      "contactType": "customer support",
+      "areaServed": "SE",
+      "availableLanguage": ["English", "Swedish"],
+      "email": "info@sustainablewww.org"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Gräsmånadsgatan 30",
+      "postalCode": "415 48",
+      "addressLocality": "Gothenburg",
+      "addressCountry": "SE"
+    },
+    "founder": [
+      {
+        "@type": "Person",
+        "name": "Michael Andersen",
+        "email": "michael@sustainablewww.org",
+        "telephone": "+46-31-79-03-740"
+      },
+      {
+        "@type": "Person",
+        "name": "Max Wallberg",
+        "email": "max@sustainablewww.org",
+        "telephone": "+46-31-79-03-740"
+      }
+    ],
+    "taxID": "559470-7167"
+  }
+}
+</script>
     <%- include('../Partials/EN/Header.ejs') %>
     <main class="SWWW_Main">
         <div class="SWWW_Main_Inner">
@@ -42,7 +77,7 @@
                             <p class="SWWW_P SWWW_Ingress"><strong>Organization number:</strong> 559470-7167</p>
                         </li>
                     </ul>
-                    <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/max-calendly-sustainablewww/30min?hide_event_type_details=1&hide_gdpr_banner=1&text_color=1e1e1e&primary_color=1e1e1e'});return false;" class="SWWW_Button" rel="noopener noreferrer">Book a free meeting with Max</button>
+                    <a href="https://app.reclaim.ai/m/swww-max/high-priority-meeting" target="_blank" class="SWWW_Button" rel="noopener noreferrer">Book a free meeting with Max</a>
                 </div>
             </section>
             <section class="SWWW_Row SWWW_Row--PaddingTop40 SWWW_PageTransitionEffect">
@@ -53,7 +88,7 @@
                             <div>
                                 <picture>
                                     <source srcset="/Images/Michael-Andersen-Portrait-Medium-Sustainable-WWW-WebP.webp" type="image/webp" />
-                                    <img src="/ImagesMichael-Andersen-Portrait-Medium-Sustainable-WWW.jpg" alt="Portrait of Michael Andersen" loading="lazy" />
+                                    <img src="/Images/Michael-Andersen-Portrait-Medium-Sustainable-WWW.jpg" alt="Portrait of Michael Andersen" loading="lazy" style="aspect-ratio: 650/951" />
                                 </picture>
                                 <h3 class="SWWW_H3">Michael Andersen</h3>
                                 <p class="SWWW_ContactList_Title">Founder, Web Developer</p>
@@ -65,7 +100,7 @@
                             <div>
                                 <picture>
                                     <source srcset="/Images/Max-Wallberg-Portrait-Medium-Sustainable-WWW-WebP.webp" type="image/webp" />
-                                    <img src="/Images/Max-Wallberg-Portrait-Medium-Sustainable-WWW.jpg" alt="Portrait of Max Wallberg" loading="lazy" />
+                                    <img src="/Images/Max-Wallberg-Portrait-Medium-Sustainable-WWW.jpg" alt="Portrait of Max Wallberg" loading="lazy" style="aspect-ratio: 650/951" />
                                 </picture>
                                 <h3 class="SWWW_H3">Max Wallberg</h3>
                                 <p class="SWWW_ContactList_Title">Founder, Advocate</p>

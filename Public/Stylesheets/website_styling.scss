@@ -903,7 +903,7 @@ $Hero_ContentMaxWidth: 1280px;
             }
             
 
-            h3 {
+            h2, h3{
                 width: 100%;
                 font-size: 1rem;
                 font-weight: f.$Headline_Font_Weight;
@@ -1439,6 +1439,27 @@ ul.SWWW_IconList {
     }
 }
 
+// FLOATING BUTTON
+.SWWW_Footer_FloatingButton {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    font-size: .9rem; 
+    text-decoration: none;
+    color: c.$White_Darker;
+    background-color: c.$Text_Black;
+    border-radius: 30px;
+    padding: 7px 25px;
+    cursor: pointer;
+    transition: all ease-in-out g.$Site_General_Animation_Time;
+    z-index: 1;
+
+    &:hover {
+        background-color: c.$Black_Lightest;
+        color: c.$White;
+    }
+}
+
 // FOOTER
 .SWWW_Footer {
     width: 100%;
@@ -1525,7 +1546,7 @@ ul.SWWW_IconList {
                     font-style: f.$Paragraph_Font_Style_Normal;
                     color: c.$Text_White;
                     font-size: .9rem;
-                    line-height: 1.4rem;
+                    line-height: 1.55rem;
                     letter-spacing: -.7px;
                     text-decoration: none;
                 }
