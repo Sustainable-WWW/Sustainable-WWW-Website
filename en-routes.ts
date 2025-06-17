@@ -13,12 +13,26 @@ router.get("/services/analysis-and-optimization", (_req, res) => res.render("EN/
 router.get("/services/hosting", (_req, res) => res.render("EN/hosting"));
 router.get("/sustainable-web-design-in-20-lessons", (_req, res) => res.render("EN/sustainable_web_design_in_20_lessons"));
 
-router.get("/cases", (_req, res) => res.render("EN/cases"));
+// PERMANENTLY REDIRECTING TO OUR-WORK INSTEAD
+//router.get("/cases", (_req, res) => res.render("EN/cases"));
 
-// Dynamic routing for case studies
-router.get("/cases/:slug", (req, res) => 
+/*router.get("/cases/:slug", (req, res) => 
     res.render(`EN/CaseStudies/${req.params.slug.replace(/-/g, "_")}`)
+);*/
+
+// PERMANENTLY REDIRECTING TO OUR WORK
+router.get("/cases", (_req, res) => res.redirect(301, "/our-work"));
+
+// PERMANENTLY REDIRECTING TO OUR WORK
+router.get("/cases/:slug", (req, res) => 
+    res.redirect(301, `/our-work/${req.params.slug}`)
 );
+
+router.get("/our-work", (_req, res) => res.render("EN/our_work"));
+
+router.get("/our-work/:slug", (req, res) => 
+    res.render(`EN/CaseStudies/${req.params.slug.replace(/-/g, "_")}`)
+)
 
 router.get("/articles", (_req, res) => res.render("EN/articles"));
 

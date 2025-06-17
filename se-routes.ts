@@ -13,12 +13,27 @@ router.get("/tjanster/analys-och-optimering", (_req, res) => res.render("SE/anal
 router.get("/tjanster/hosting", (_req, res) => res.render("SE/hosting"));
 router.get("/sustainable-web-design-in-20-lessons", (_req, res) => res.render("SE/sustainable_web_design_in_20_lessons"));
 
-router.get("/fallstudier", (_req, res) => res.render("SE/cases"));
+// PERMANENTLY REDIRECTING TO VÅRA-PROJEKT INSTEAD
+//router.get("/fallstudier", (_req, res) => res.render("SE/cases"));
 
 // Dynamic routing for case studies
-router.get("/fallstudier/:slug", (req, res) => 
+/*router.get("/fallstudier/:slug", (req, res) => 
     res.render(`SE/CaseStudies/${req.params.slug.replace(/-/g, "_")}`)
+);*/
+
+// PERMANENTLY REDIRECTING TO OUR WORK
+router.get("/fallstudier", (_req, res) => res.redirect(301, "/vaara-projekt"));
+
+// PERMANENTLY REDIRECTING TO OUR WORK
+router.get("/fallstudier/:slug", (req, res) => 
+    res.redirect(301, `/vaara-projekt/${req.params.slug}`)
 );
+
+router.get("/vaara-projekt", (_req, res) => res.render("SE/projekt"));
+
+router.get("/vaara-projekt/:slug", (req, res) => 
+    res.render(`SE/CaseStudies/${req.params.slug.replace(/-/g, "_")}`)
+)
 
 router.get("/artiklar", (_req, res) => res.render("SE/artiklar"));
 
