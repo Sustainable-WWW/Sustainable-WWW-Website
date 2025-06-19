@@ -13,12 +13,26 @@ router.get("/services/analyse-og-optimering", (_req, res) => res.render("DK/anal
 router.get("/services/hosting", (_req, res) => res.render("DK/hosting"));
 router.get("/sustainable-web-design-in-20-lessons", (_req, res) => res.render("DK/sustainable_web_design_in_20_lessons"));
 
-router.get("/cases", (_req, res) => res.render("DK/cases"));
+//router.get("/cases", (_req, res) => res.render("DK/cases"));
 
 // Dynamic routing for case studies
-router.get("/cases/:slug", (req, res) => 
+/*router.get("/cases/:slug", (req, res) => 
     res.render(`DK/CaseStudies/${req.params.slug.replace(/-/g, "_")}`)
+);*/
+
+// PERMANENTLY REDIRECTING TO OUR WORK
+router.get("/cases", (_req, res) => res.redirect(301, "/vores-projekter"));
+
+// PERMANENTLY REDIRECTING TO OUR WORK
+router.get("/cases/:slug", (req, res) => 
+    res.redirect(301, `/vores-projekter/${req.params.slug}`)
 );
+
+router.get("/vores-projekter", (_req, res) => res.render("DK/projekter"));
+
+router.get("/vores-projekter/:slug", (req, res) => 
+    res.render(`DK/CaseStudies/${req.params.slug.replace(/-/g, "_")}`)
+)
 
 router.get("/artikler", (_req, res) => res.render("DK/artikler"));
 
